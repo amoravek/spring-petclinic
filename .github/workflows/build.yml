@@ -14,7 +14,8 @@ jobs:
   build-app:
 
     #runs-on: [self-hosted, edgecluster2]
-    runs-on: ubuntu-latest
+    #runs-on: ubuntu-latest
+    runs-on: [self-hosted, bi-ocp]
 
     steps:
     - uses: actions/checkout@v2
