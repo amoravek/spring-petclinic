@@ -17,10 +17,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    
-    - name: GitHub Action for Maven
-      uses: LucaFeger/action-maven-cli@1.1.0
-          
+  
     - name: Cache local Maven repository
       uses: actions/cache@v2
       with:
