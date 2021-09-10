@@ -20,7 +20,7 @@ jobs:
     
   maven-build:
 
-    runs-on: ubuntu:latest
+    runs-on: ubuntu-latest
 #     runs-on: self-hosted
 
     steps:
