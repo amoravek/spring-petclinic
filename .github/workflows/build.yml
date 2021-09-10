@@ -40,7 +40,7 @@ jobs:
     - name: Archive production artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: dist-without-markdown
+        name: spring-petclinic-2.4.5.jar
         path: ./target/spring-petclinic-2.4.5.jar     
  
 #     - name: Nexus Repository Publisher for GitHub Actions
