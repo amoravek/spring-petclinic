@@ -11,10 +11,17 @@ on:
   workflow_dispatch:
 
 jobs:
+  jfrog-info:
+    runs-on: self-hosted
+
+    steps:
+    - uses: jfrog/setup-jfrog-cli@v1
+    - run: jfrog --version
+    
   maven-build:
 
-#     runs-on: ubuntu:latest
-    runs-on: self-hosted
+    runs-on: ubuntu:latest
+#     runs-on: self-hosted
 
     steps:
     - uses: actions/checkout@v2
