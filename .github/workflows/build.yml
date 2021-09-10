@@ -4,7 +4,7 @@
 name: Spring PetClinic Build
 
 on:
-  push:https://github.com/amoravek/spring-petclinic
+  push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
