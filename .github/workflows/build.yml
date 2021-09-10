@@ -36,6 +36,12 @@ jobs:
           
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+      
+    - name: Archive production artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: dist-without-markdown
+        path: ./target/spring-petclinic-2.4.5.jar     
  
 #     - name: Nexus Repository Publisher for GitHub Actions
 #       uses: sonatype-nexus-community/nexus-repo-github-action@1.0.0
